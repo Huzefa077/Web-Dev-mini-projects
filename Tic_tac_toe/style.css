@@ -89,11 +89,12 @@ h1{
 
 footer {
     min-height: 50px; /* Add some space above the copyright text */
-  }
+    font-size: 1rem;
+}
   
 #copy {
  
-  
+  font-size: 0.8em;
   /* Fallback method (works in all browsers) */
   position: absolute;
   bottom: 0;
@@ -101,4 +102,5 @@ footer {
   text-align: center;
   background-color: rgba(128, 128, 128, 0.342);
   color: rgba(189, 209, 209, 0.616);
+
   }
