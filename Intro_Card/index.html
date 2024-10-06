@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio Card</title>
+</head>
+<body>
+    <div class="wrapper">
+        
+        <div class="card">
+            <div id="imageDiv">
+                <img id="me" src="me.jpg" alt="huzaifa">
+            </div>
+            
+            <p id="name">Huzaifa Sheikh</p>
+            <span id="role">Web Developer</span>
+            <div class="two-btn-div">
+                
+                <button onclick="openSharebox()" id="shareBtn" class="btn2">
+                    <i id="shareIcon" class="fa-solid fa-share"></i>
+                    Share profile
+                </button>
+                
+                <button id="followBtn" class="btn2">
+                    Follow Me
+                </button>
+            </div>
+        </div>
+        
+        <div  id="c1" class="circle"></div>
+        <div  id="c2" class="circle"></div>
+        
+        <div class="linkBox">
+            <div class="shareBar">
+                <p id="popTitle">Share My Profile</p>
+                <button onclick="closeSharebox()" id="closeBar">X</button>
+            </div>
+            <hr id="line">
+            <p id="shareVia">Share via</p>
+            <div class="shareIcons">
+                
+                <a href="https://www.facebook.com/Huzaifasajidsheikh?mibextid=ZbWKwL"><i id="fbk" class="fa-brands fa-facebook icons " style="color: rgb(121, 121, 253);"></i>
+                </a>
+                <a href="https://x.com/huzefa_o77"><i id="x" class="fa-brands fa-x-twitter icons" style="color: rgb(180, 180, 184);" ></i></a> 
+                <a href="https://www.instagram.com/huzefa_o77?igsh=ZGFtbXZwMGZkMGMw"><i id="insta" class="fa-brands fa-instagram icons" style="color: rgb(236, 102, 44);"></i></a> 
+                <a href="http://t.me/Huzaifa_o77"><i id="tlgrm" class="fa-brands fa-telegram icons" style="color: rgb(135, 146, 245);"></i></a> 
+                <a href="https://wa.me/qr/RVFGZLAL4ED3E1"><i id="wapp" class="fa-brands fa-whatsapp icons" style="color: #3eec27;"></i></a> 
+                
+            </div>
+        </div>
+    </div>
+    <div class="overlay" onclick="closeSharebox()"></div>
+    <script src="scripts.js"></script>
+</body>
+</html>

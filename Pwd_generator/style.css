@@ -1,0 +1,204 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+    color: aqua;
+
+}
+
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    background:linear-gradient(to right, rgb(8, 2, 46),rgb(6, 6, 121));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .container{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    border: 2px solid grey; 
+} */
+
+h2{
+    margin: 20px 30px;
+}
+.display-container{
+    position: relative;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: rgb(3, 3, 37);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+#disp_pwd{
+    width: 100%;
+    background-color: rgba(240, 248, 255, 0);
+    border: 0px;
+    color: yellow;
+    font-size: 15px;
+}
+
+#disp_pwd::placeholder{
+    color: rgba(255, 255, 0, 0.628);
+}
+
+.icon{
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/*  */
+
+#copyBtn{
+    background-color: rgba(255, 228, 196, 0);
+    border: 0px;
+    color: aqua;
+    
+}
+
+.copyM{
+    position: absolute;
+    background-color: rgba(0, 0, 255, 0.471);
+    top: -13px;
+    right: -20px;
+    border-radius: 20px ;
+    padding: 4px 9px;
+    color: yellow;
+    transition: all 100ms ease-in-out;
+    opacity: 0;
+    transform: scale(0);
+}
+
+.copyM.active{
+    opacity: 1;
+    transform: scale(1);
+
+}
+
+#slider{
+    appearance: none;
+    border-radius: 20px;
+    cursor: pointer;
+    height: 8px;
+    background-color:rgb(115, 115, 245) ;
+    box-shadow: 0px 0px 8px 0px rgb(8, 71, 243);
+    margin:20px 0px ;
+}
+
+#slider:focus{
+    border: 1px solid yellow;
+}
+
+#slider::-webkit-slider-thumb{
+    appearance: none;
+    background-color: yellow;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+
+#slider::-webkit-slider-thumb:hover{
+    background-color: rgb(23, 1, 1);
+    border: 1px solid yellow;
+    box-shadow: 0px 0px 10px 0px yellow;
+}
+
+.input-container{
+    background-color: rgb(3, 3, 37);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+}
+#pwdLen{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* margin: 15px 20px; */
+}
+p{
+    margin: 0px;
+}
+
+
+#lenNum{
+    color: yellow;
+}
+
+
+.aioCheck{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.checkLines input{
+    appearance: none;
+    position: relative;
+    height: 20px;
+    width: 20px;
+    border-radius: 5px;
+    border: 1px solid rgb(198, 195, 195);
+    cursor: pointer;
+}
+
+.checkLines input:checked{
+    background-color: rgb(76, 225, 225);
+}
+
+.checkLines input:checked::before{
+    content: "✓ ";
+    position: absolute;
+    font-size: 15px;
+    left: 3px;
+    bottom: 1px;
+}
+
+.checkLines{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.strengthInd{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 4px;
+    font-size: 20px;
+}
+#circle{
+    background-color: aliceblue;
+    border-radius: 50%;
+    width: 20px;
+    color: dark;
+    height: 20px;
+}
+
+.btnDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+/* ✓ */
+#genBtn{
+    background-color:rgb(85, 85, 248) ;
+    border: 0px;
+    border-radius: 10px;
+    padding: 13px 70px;
+    box-shadow: 0px 2px 0px yellow;
+    color: yellow;
+    font-size: 15px;
+    cursor: pointer;
+}
+

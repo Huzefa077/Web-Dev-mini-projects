@@ -1,0 +1,237 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.wrapper{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+}
+
+
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid rgba(255, 255, 255, 0.356);
+    border-radius: 10px;
+    padding: 60px 30px;
+    background-color: rgba(81, 109, 109, 0.418);
+    gap: 30px;
+    backdrop-filter: blur(20px);
+    z-index: 1;
+}
+
+#imageDiv{
+    height: 120px;
+    width: 120px;
+}
+
+#me{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+#name{
+    margin: 10px;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+#role{
+    color: rgb(163, 163, 163);
+}
+
+.two-btn-div{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    
+}
+
+#shareIcon{
+    margin-right: 3px;
+}
+
+.btn2{
+    flex: 1;
+    color: white;
+    background-color: rgb(59, 58, 58,0);
+    border: 1px solid rgba(255, 255, 255, 0.607);
+    border-radius: 5px;
+    width: 140px;
+    padding: 9px 9px;
+    transition: 0.3s, transform 0s ease-in-out;
+}
+
+.btn2:hover{
+    background-color: rgb(205, 196, 196);
+    color: black;
+}
+
+.btn2:active{
+    transform:scale(1.05);
+}
+
+.circle{
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid grey;
+    /* z-index: ; */
+}
+
+#c1{
+    height: 200px;
+    width: 200px;
+    top: 50px;
+    left: 500px;
+    background:linear-gradient(to right,purple 20%,red);
+    box-shadow:0px 0px 30px 0px rgb(255, 0, 0) ;
+    animation: move1 8s infinite alternate ease-in-out;
+    
+}
+#c2{
+    height: 300px;
+    width: 300px;
+    bottom: 10px;
+    right: 380px;
+    background:linear-gradient(to right,rgb(7, 7, 249),rgb(57, 153, 231));
+    box-shadow:0px 0px 60px 10px rgb(59, 94, 222) ;
+    animation: move2 9s infinite alternate ease-in-out;
+
+    
+}
+@keyframes move1{
+    0%{
+        left: 520px;
+
+    }
+    50%{
+        left: 450px;
+    }
+    100%{
+        left: 580px;
+    }
+}
+@keyframes move2{
+    0%{
+        top: 440px;
+        right: 385px;
+    }
+    50%{
+        top: 400px;
+        right: 300px;   
+    }
+
+    100%{
+        top: 480px;
+        right: 470px;
+    }
+}
+
+.linkBox{
+    position: absolute;
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px 30px;
+    width: 400px;
+    height: 200px;
+    background-color: rgba(16, 4, 4, 0.577);
+    border-radius: 10px;
+    backdrop-filter: blur(15px);
+    z-index: 3;
+    scale: 0;
+    transition: 0.2s ease-in-out;
+    
+}
+
+.show{
+    scale: 1;
+}
+.shareBar{
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    justify-content: space-between;
+    padding: 0px;
+    font-size: 20px;
+    
+}
+#popTitle{
+    margin: 4px;
+}
+
+#closeBar{
+    /* position: relative; */
+    background-color: rgba(250, 235, 215, 0);
+    color: rgba(255, 255, 255, 0.882);
+    border: 0px;
+    padding: 0px;
+    font-size: 15px;
+}
+
+#shareVia{
+    color: rgb(242, 238, 238);
+}
+
+#line{
+    border: 1px solid grey;
+    width: 400px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.shareIcons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icons{
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 30px;
+    transition: 0.2s;
+    
+}
+.hide{
+    display:none;
+}
+
+.icons:hover{
+    background-color: rgb(255, 255, 255);
+}
+
+.overlay{
+    background-color: rgba(211, 214, 216, 0.113);
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+}
+.overlayactive{
+    opacity: 1;
+    pointer-events: initial;
+    
+}
+
