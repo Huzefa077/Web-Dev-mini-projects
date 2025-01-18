@@ -1,5 +1,4 @@
 1] FUNCTIONAL CALCULATOR : A responsive and visually appealing calculator built using HTML, CSS, and JavaScript. It efficiently handles basic arithmetic operations with smooth UI interactions, showcasing strong frontend development skills and attention to design aesthetics.
-
 🔗 Live Demo: https://huzefa077.github.io/Web-Dev-mini-projects/Calculator/
 
 2] DYNAMIC DUO : A visually engaging web page built with HTML and Tailwind CSS, featuring two balls moving in a continuous loop. This dynamic animation demonstrates fluid design and CSS animation skills, creating a modern, interactive experience.
