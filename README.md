@@ -38,7 +38,7 @@ A responsive and visually appealing calculator built using HTML, CSS, and JavaSc
 <br>
 <br>
 
-7] LANDING PAGE :  
+### 7] LANDING PAGE :  
 A clean, simple, and professional-looking landing page created using HTML and CSS. The page features an appealing design making it perfect for showcasing any service or product.
 <br>
 🔗 Live Demo: https://huzefa077.github.io/Web-Dev-mini-projects/landing_page/
