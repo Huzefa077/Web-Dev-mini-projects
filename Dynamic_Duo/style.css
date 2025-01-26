@@ -1,9 +1,9 @@
-body{
+body {
     margin: 0px;
     padding: 0px;
 }
 
-.wrapper{
+.wrapper {
     position: relative;
     justify-content: center;
     align-items: center;
@@ -13,11 +13,10 @@ body{
     background-color: black;
     color: white;
     font-family: sans-serif;
+    flex-wrap: wrap; /* Ensures stacking on smaller screens */
 }
 
-
-
-.card{
+.card {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,42 +30,41 @@ body{
     z-index: 1;
 }
 
-#imageDiv{
+#imageDiv {
     height: 120px;
     width: 120px;
 }
 
-#me{
+#me {
     height: 100%;
     width: 100%;
     border-radius: 50%;
 }
 
-#name{
+#name {
     margin: 10px;
     font-weight: 600;
     font-size: 25px;
 }
 
-#role{
+#role {
     color: rgb(163, 163, 163);
 }
 
-.two-btn-div{
+.two-btn-div {
     display: flex;
     flex-direction: row;
     gap: 12px;
-    
 }
 
-#shareIcon{
+#shareIcon {
     margin-right: 3px;
 }
 
-.btn2{
+.btn2 {
     flex: 1;
     color: white;
-    background-color: rgb(59, 58, 58,0);
+    background-color: rgb(59, 58, 58, 0);
     border: 1px solid rgba(255, 255, 255, 0.607);
     border-radius: 5px;
     width: 140px;
@@ -74,107 +72,108 @@ body{
     transition: 0.3s, transform 0s ease-in-out;
 }
 
-.btn2:hover{
+.btn2:hover {
     background-color: rgb(205, 196, 196);
     color: black;
 }
 
-.btn2:active{
-    transform:scale(1.05);
+.btn2:active {
+    transform: scale(1.05);
 }
 
-.circle{
+.circle {
     position: absolute;
     border-radius: 50%;
     border: 1px solid grey;
-    /* z-index: ; */
 }
 
-#c1{
+#c1 {
     height: 200px;
     width: 200px;
     top: 50px;
     left: 500px;
-    background:linear-gradient(to right,purple 20%,red);
-    box-shadow:0px 0px 30px 0px rgb(255, 0, 0) ;
+    background: linear-gradient(to right, purple 20%, red);
+    box-shadow: 0px 0px 30px 0px rgb(255, 0, 0);
     animation: move1 8s infinite alternate ease-in-out;
-    
 }
-#c2{
+
+#c2 {
     height: 300px;
     width: 300px;
     bottom: 10px;
     right: 380px;
-    background:linear-gradient(to right,rgb(7, 7, 249),rgb(57, 153, 231));
-    box-shadow:0px 0px 60px 10px rgb(59, 94, 222) ;
+    background: linear-gradient(to right, rgb(7, 7, 249), rgb(57, 153, 231));
+    box-shadow: 0px 0px 60px 10px rgb(59, 94, 222);
     animation: move2 9s infinite alternate ease-in-out;
-
-    
 }
-@keyframes move1{
-    0%{
-        left: 520px;
 
+@keyframes move1 {
+    0% {
+        left: 520px;
     }
-    50%{
+
+    50% {
         left: 450px;
     }
-    100%{
+
+    100% {
         left: 580px;
     }
 }
-@keyframes move2{
-    0%{
+
+@keyframes move2 {
+    0% {
         top: 440px;
         right: 385px;
     }
-    50%{
+
+    50% {
         top: 400px;
-        right: 300px;   
+        right: 300px;
     }
 
-    100%{
+    100% {
         top: 480px;
         right: 470px;
     }
 }
 
-.linkBox{
+.linkBox {
     position: absolute;
     border: 1px solid grey;
     display: flex;
     flex-direction: column;
     gap: 10px;
     padding: 15px 30px;
-    width: 400px;
-    height: 200px;
+    width: 90%;
+    max-width: 400px;
+    height: auto;
     background-color: rgba(16, 4, 4, 0.577);
     border-radius: 10px;
     backdrop-filter: blur(15px);
     z-index: 3;
     scale: 0;
     transition: 0.2s ease-in-out;
-    
 }
 
-.show{
+.show {
     scale: 1;
 }
-.shareBar{
+
+.shareBar {
     display: flex;
     flex-direction: row;
     margin: 0px;
     justify-content: space-between;
     padding: 0px;
     font-size: 20px;
-    
 }
-#popTitle{
+
+#popTitle {
     margin: 4px;
 }
 
-#closeBar{
-    /* position: relative; */
+#closeBar {
     background-color: rgba(250, 235, 215, 0);
     color: rgba(255, 255, 255, 0.882);
     border: 0px;
@@ -182,42 +181,37 @@ body{
     font-size: 15px;
 }
 
-#shareVia{
+#shareVia {
     color: rgb(242, 238, 238);
 }
 
-#line{
+#line {
     border: 1px solid grey;
-    width: 400px;
+    width: 100%; /* Adjusted for responsiveness */
     margin: 0px;
     padding: 0px;
 }
 
-.shareIcons{
+.shareIcons {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 }
 
-.icons{
+.icons {
     border: 1px solid white;
     padding: 10px;
     border-radius: 50%;
     font-size: 30px;
     transition: 0.2s;
-    
-}
-.hide{
-    display:none;
 }
 
-.icons:hover{
+.icons:hover {
     background-color: rgb(255, 255, 255);
 }
 
-.overlay{
+.overlay {
     background-color: rgba(211, 214, 216, 0.113);
     opacity: 0;
     transition: 0.5s ease-in-out;
@@ -229,9 +223,111 @@ body{
     left: 0;
     z-index: 2;
 }
-.overlayactive{
+
+.overlayactive {
     opacity: 1;
     pointer-events: initial;
-    
 }
 
+@media (max-width: 430px) {
+    .wrapper {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .card {
+        padding: 30px 20px;
+        gap: 20px;
+    }
+
+    .two-btn-div {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn2 {
+        width: 100%;
+    }
+
+    .linkBox {
+        width: 90%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    #imageDiv {
+        height: 100px;
+        width: 100px;
+    }
+
+    #name {
+        font-size: 20px;
+    }
+
+    #role {
+        font-size: 16px;
+    }
+
+    #c1 {
+        height: 200px;
+        width: 200px;
+        top: 0px;
+        left: 0px;
+        background: linear-gradient(to right, purple 20%, red);
+        box-shadow: 0px 0px 30px 0px rgb(255, 0, 0);
+        animation: move1 20s infinite normal;
+    }
+    
+    #c2 {
+        height: 250px;
+        width: 250px;
+        bottom: 0px;
+        right: 0px;
+        background: linear-gradient(to right, rgb(7, 7, 249), rgb(57, 153, 231));
+        box-shadow: 0px 0px 60px 10px rgb(59, 94, 222);
+        animation: move2 15s infinite normal;
+    }
+    @keyframes move1 {
+        0% {
+            top: 100px;
+            left:-50px;
+        }
+        25%{
+            top: -80px;
+            /* left: 160px; */
+        }
+        50% {
+            top: 80px;
+            left: 300px;
+        }
+        75%{
+            top:160px;
+            /* left:160px; */
+        }
+        100% {
+            top: 100px;
+            left:-50px;
+        }
+    }
+    
+    @keyframes move2 {
+        0% {
+            top: 600px;
+            left: -70px;
+        }
+        25%{
+            top:250px ;
+        }
+        50%{
+            top: 500px;
+            left: 300px;
+        }
+        75%{
+            top:850px ;
+        }
+        100% {
+            top: 600px;
+            left:-70px;
+        }
+    }
+}
