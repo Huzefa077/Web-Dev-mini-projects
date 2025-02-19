@@ -121,6 +121,7 @@ h1 {
 
 .loading-container.active{
     display: flex;
+    padding-top: 7rem;
 }
 
 .loading-container p{
