@@ -34,6 +34,6 @@ SkyCast is a simple weather app that provides real-time weather updates using th
 3. Enter a city or allow location access.  
 
 ## **📜 License**  
-Open-source & free to use.  
+Open-source & anyone can use.  
 
 ---  
