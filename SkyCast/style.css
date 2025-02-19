@@ -286,10 +286,12 @@ h1 {
 .footer {
     width: 100%;
     text-align: center;
-    padding: 5px 0;
-    background-color: var(--colorDark1);
-    color: var(--colorLight2);
+    padding: 2px 0;
+    background-color: rgba(225, 97, 17, 0.881);
+    color:#3e3e45;
     position: fixed;
     bottom: 0;
     left: 0;
+    z-index: 4;
+    position: fixed;
 }
