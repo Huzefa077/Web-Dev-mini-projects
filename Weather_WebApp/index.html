@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="/assets/favicon.png">
+    
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Font+Name">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto"> -->
+
+    <title>SkyCast</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>SkyCast</h1>
+
+        <div class="tab-container">
+            <p class="tab" data-userWeather>Your Weather</p>
+            <p class="tab" data-searchWeather>Search Weather</p>
+        </div>
+
+        <div class="weather-container">
+
+            <!--Grant Location Container-->
+            <div class="sub-container grant-location-container">
+                <img src="assets/location.png" width="80" height="80" alt="location" loading="lazy">
+                <p>Grant Location Access</p>
+                <p>Allow access to get weather Information</p>
+                <button class="btn" data-grantAccess>Grant Access</button>
+            </div>
+
+            <!--Search weather page-->
+            <form class="form-container" data-searchForm>
+                <input placeholder="Search for City.." data-searchInput>
+                <button class="btn">
+                    <img src="assets/magnifying-glass-location-solid.svg" height="20" width="20" alt="search" loading="lazy">
+                </button>
+            </form>
+
+            <!--Loading Screen-->
+            <div class="sub-container loading-container">
+                <img id="load" src="assets/Gear Loader.gif" height="90" width="90" alt="loading" loading="lazy">
+                <p>Loading</p>
+            </div>
+
+            <!--Show weather info (same will be used of search weather box display) -->
+            <div class=" sub-container user-info-container">
+                <!--place name before flag-->
+                <div class="name">
+                    <p data-cityName></p>
+                    <img data-countryIcon>
+                </div>
+
+                <!--name flag-->
+                <p data-weatherDesc></p>
+
+                <!--Weather icon-->
+                <img data-weatherIcon>
+
+                <!--Temperature-->
+                <p data-temp></p>
+
+                <!--3 cards -- paramters-->
+                <div class="parameter-container">
+                    
+                    <!--1st card-->
+                    <div class="parameter">
+                        <img src="https://cdn-icons-png.flaticon.com/128/959/959737.png" height="60" width="60" alt="wind" loading="lazy">
+                        <p>windspeed</p>
+                        <p data-windspeed></p>
+                    </div>
+
+                    <!--2nd card-->
+                    <div class="parameter">
+                        <img src="https://cdn-icons-png.flaticon.com/512/5664/5664993.png" width="60" height="60" alt="humidity" loading="lazy">
+                        <p>humidity</p>
+                        <p data-humidity></p>
+                    </div>
+
+                    <!--3rd card-->
+                    <div class="parameter">
+                        <img src="https://cdn-icons-png.flaticon.com/128/414/414927.png" width="60" height="60" alt="cloudiness" loading="lazy">
+                        <p>Clouds</p>
+                        <p data-cloudiness></p>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+        <div  id="c1" class="circle"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Huzaifa Sheikh. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
