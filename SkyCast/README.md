@@ -1,4 +1,4 @@
-# **SkyCast - Weather App 🌤️**  
+--# **SkyCast - Weather App 🌤️**  
 
 SkyCast is a simple weather app that provides real-time weather updates using the **[OpenWeather API](https://openweathermap.org/)** and displays country flags using **[FlagCDN API](https://flagpedia.net/download/api)**.  
 
@@ -28,7 +28,7 @@ SkyCast is a simple weather app that provides real-time weather updates using th
 ## **🛠️ How to Run?**  
 1. Clone the repo:  
    ```bash
-   git clone https://github.com/yourusername/SkyCast-Weather-App.git
+   git clone https://github.com/Huzefa077/SkyCast.git
    ```  
 2. Open `index.html` in a browser.  
 3. Enter a city or allow location access.  
