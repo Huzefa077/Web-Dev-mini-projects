@@ -23,7 +23,7 @@ SkyCast is a simple weather app that provides real-time weather updates using th
   ```  
 
 ## **🚀 Live Demo**  
-🔗 **[SkyCast Live](enter here)**  
+🔗 **[SkyCast Live](https://huzefa077.github.io/Web-Dev-mini-projects/SkyCast/)**  
 
 ## **🛠️ How to Run?**  
 1. Clone the repo:  
