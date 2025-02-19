@@ -1,4 +1,4 @@
---# **SkyCast - Weather App 🌤️**  
+# **SkyCast - Weather App 🌤️**  
 
 SkyCast is a simple weather app that provides real-time weather updates using the **[OpenWeather API](https://openweathermap.org/)** and displays country flags using **[FlagCDN API](https://flagpedia.net/download/api)**.  
 
