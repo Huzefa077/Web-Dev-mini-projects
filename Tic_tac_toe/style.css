@@ -90,6 +90,7 @@ h1{
 footer {
     min-height: 50px; /* Add some space above the copyright text */
     font-size: 1rem;
+    position: fixed;
 }
   
 #copy {
