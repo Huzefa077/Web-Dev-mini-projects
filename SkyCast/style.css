@@ -35,7 +35,7 @@ h1 {
 
 .tab-container {
     width:90%;
-    max-width: 550px;
+    max-width: 500px;
     margin: 0 auto;
     margin-top: 2rem;
     display: flex;
@@ -121,7 +121,7 @@ h1 {
 
 .loading-container.active{
     display: flex;
-    padding-top: 7rem;
+    padding-top: 7rem ;
 }
 
 .loading-container p{
@@ -256,13 +256,21 @@ h1 {
     border: 1px solid grey;
     z-index: 2; /* Lower z-index to be below the tab and weather containers */
 }
+.c1-container {
+    width: 90%;
+    max-width: 500px; /* Same max-width as .tab-container */
+    position: fixed;
+    bottom: 21%;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
 #c1 {
-    height: 130px;
-    width: 130px;
+    height: 170px;
+    width: 170px;
     background: linear-gradient(to right, rgb(218, 218, 224), rgb(75, 95, 111));
     box-shadow: 0px 0px 20px 0px rgb(210, 211, 215);
-    animation: move1 6s infinite alternate ease-in-out;
+    animation: move1 5s infinite alternate ease-in-out;
     transition: background 1s ease-in-out, box-shadow 0.5s ease-in-out;
 }
 
@@ -274,11 +282,11 @@ h1 {
 @keyframes move1 {
     0% {
         top: 75%;
-        right: 2%;
+        right: 0%;
     }
     100% {
         top: 75%;
-        right: 80%;
+        right: 75%;
     }
 }
 
