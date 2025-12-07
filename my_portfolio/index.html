@@ -30,20 +30,23 @@
 
         <div class="hero">
             <img class="me-img" src="Me.jpg" alt="">
-            <div class="intro">
-                <p id="intro-name">Huzaifa Sheikh</p>
-                <p id="intro-skill">Creative
-                <p id="designer-txt">designer</p>
-                </p>
-                <p id="intro-lorem">Experienced student ready to handle tasks with a practical mindset and attention to detail. I aim for simple solutions to ensure project success. Let's collaborate for effective results!</p>
-                <div class="icons">
-                    <a href="https://www.instagram.com/huzefa_o77?igsh=ZGFtbXZwMGZkMGMw"><i class="bi bi-instagram"></i></a>
-                    <a href="https://www.facebook.com/Huzaifasajidsheikh?mibextid=ZbWKwL"><i class="bi bi-facebook"></i></a>
-                    <a href="https://x.com/huzefa_o77?t=61rx7z545YTApZsELP3GzQ&s=09"><i class="bi bi-twitter-x"></i></a>
-                    <a href="https://www.linkedin.com/in/huzaifa-sheikh-5514a6268?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="bi bi-linkedin"></i></a>
-                </div>
 
-            </div>
+            <div class="intro-icons-div">    
+                <div class="intro">
+                    <p id="intro-name">Huzaifa Sheikh</p>
+                    <p id="intro-skill">Creative
+                    <p id="designer-txt">designer</p>
+                    </p>
+                    <p id="intro-lorem">Experienced student ready to handle tasks with a practical mindset and attention to detail. I aim for simple solutions to ensure project success. Let's collaborate for effective results!</p>
+                    <div class="icons">
+                        <a href="https://www.instagram.com/huzefa_o77?igsh=ZGFtbXZwMGZkMGMw"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.facebook.com/Huzaifasajidsheikh?mibextid=ZbWKwL"><i class="bi bi-facebook"></i></a>
+                        <a href="https://x.com/huzefa_o77?t=61rx7z545YTApZsELP3GzQ&s=09"><i class="bi bi-twitter-x"></i></a>
+                        <a href="https://www.linkedin.com/in/huzaifa-sheikh-5514a6268?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>  
+              
         </div>
     </div>
 
@@ -140,11 +143,9 @@
         </div>
     </div>
 
-    <div class="pg-4">
+    <!-- <div class="pg-4">
         <div id="proj-id" class="project-block">
             <p class="project-heading"><span id="my">My </span>projects</p>
-            <!-- <p class="project-para">
-            </p> -->
         </div>
 
         <div class="all-projects-flex">
@@ -172,8 +173,60 @@
 
         </div>
 
+    </div> -->
+<div class="pg-4">
+    <div class="project-heading">
+        My <span id="my">Projects</span>
     </div>
+    
+    <div class="projects-container">
+        <button class="scroll-btn left">❮</button>
+        <div class="all-projects-flex">
+            <a href="https://huzefa077.github.io/Codsoft_project/Lev-1_T-1%20(landing_page)/">
+                <div class="project-box">
+                    <img class="P-img" src="landing-pg.png" alt="Landing Page">
+                    <div class="info">
+                        <p class="project-name">Landing page</p>
+                        <p class="project-para">Crafted a stylish landing page with dynamic hover effects and an appealing background using CSS and HTML.</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="https://huzefa077.github.io/Codsoft_project/Lev-1_T-3%20(Calculator)/">
+                <div class="project-box">
+                    <img class="P-img" src="calculator.png" alt="Calculator">
+                    <div class="info">
+                        <p class="project-name">Calculator</p>
+                        <p class="project-para">Developed a fully functional calculator using HTML, CSS, and JavaScript, showcasing a seamless blend of front-end technology for interactive user experiences.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <button class="scroll-btn right">❯</button>
+    </div>
+</div>
 
+<script>
+    const scrollContainer = document.querySelector('.all-projects-flex');
+    const leftBtn = document.querySelector('.scroll-btn.left');
+    const rightBtn = document.querySelector('.scroll-btn.right');
+    
+    if (scrollContainer && leftBtn && rightBtn) {
+        leftBtn.addEventListener('click', () => {
+            scrollContainer.scrollBy({
+                left: -450,
+                behavior: 'smooth'
+            });
+        });
+        
+        rightBtn.addEventListener('click', () => {
+            scrollContainer.scrollBy({
+                left: 450,
+                behavior: 'smooth'
+            });
+        });
+    }
+</script>
     <section class="pg-5">
         <div id="contact-id" class="contact-header">
             <p>Contact Me</p>
@@ -206,15 +259,14 @@
         </div>
 
         <form class="form-div">
-            
             <div class="name-email-div">
-                <input class="name-email" type="text" placeholder="Your Name*">
-                <input class="name-email" type="email" placeholder="Your Email*">
+                <input class="name-email" type="text" placeholder="Your Name*" required>
+                <input class="name-email" type="email" placeholder="Your Email*" required>
             </div>
             <div>
-                <input class="subject" type="text" placeholder="Your Subject*">
+                <input class="subject" type="text" placeholder="Your Subject*" required>
             </div>
-            <textarea name="" id="textarea" cols="175" rows="4" placeholder="Your Message..." ></textarea>
+            <textarea id="textarea" cols="175" rows="4" placeholder="Your Message..." required></textarea>
             <br>
             <input class="submit-button" type="submit" value="Submit">
         </form>
